@@ -1,0 +1,56 @@
+#+TITLE: Desarrollo de Aplicaciones Web
+
+* Desarrollo de Aplicaciones Web
+
+** Unidad 1: FrontEnd y BackEnd
+*** Fundamentos de Python
+**** Definiciones
+- Frontend: Es lo visible para el usuario, usualmente es la parte bonita que utiliza diseño y se centra en la experiencia de usuario.
+
+- Backend: Es la parte no visible, esta parte se encarga sobre la conexion hacia el servidor, bases de datos, apis y todo lo que necesita el frontend para funcionar.
+
+- API: Las apis es la forma de comunicacion entre el frontend y backend, estas se llaman desde el frontend y permiten acceder al servidor, bases de datos o informacion extra.
+
+- Lenguages de programacion tipiados: Estos lenguajes requieren declarar las variables con us tipo de dato, esto hace que sean mas verboso[fn:verboso] y en general una experiencia mas estricta de desarrollo.
+
+- Lenguajes de programacion no tipiados: Estso lenguajes decalran las variables sin necesidad de definir el tipo de dato (el interprete infiere el tipo). Esto resulta en un codigo mas legible y mas facil de aprender si se es principiante.
+
+- Lenguaje compilado: Son lenguajes los cuales el codigo se convierte a binario que lee el sistema operativo para ejecutar.
+
+- Lenguaje interpretado: Son lenguajes que requieren un interprete[fn:interprete] que ejecutan el codigo directamente en tiempo real.
+
+- Lenguaje intermedio: Se compila el codigo a un lenguaje intermedio y este ultimo se ejecuta en una maquina virtual.
+
+**** Paquetes
+Tambien llamado modulos, son archivos de python los cuales contienen codigo ya escrito que puede ser utilizado en tus proyectos mediante la sentencia import. Un paquete es una coleccion de modulos los cuales crean un "miniprograma" el cual tu puedes importar y utilizar cuando quieras.
+#+BEGIN_SRC python
+import random
+
+return random.randint(1, 10)
+#+END_SRC
+
+#+RESULTS:
+: 9
+
+En este caso, el paquete "random" se importa y permite utilizar la funcionalidad de randint() que permite la seleccion de un numero aleatorio dentro de un rango.
+
+#+BEGIN_SRC python
+from random import randint
+
+return randint(1, 10)
+#+END_SRC
+
+#+RESULTS:
+: 5
+
+Tambien, existe la frase "from" la cual importa ciertas caracteristicas las cuales se quieren importar en vez de importar todos los elementos del paquete
+
+***** Caracteristicas de un paquete
+- Cada modulo tiene su propio
+- Los modulos pueden importar otros modulos (dependencias)
+- Puede usar el mismo nombre de variables globales en cada modulo sin generar conflicto
+- No se definen o declarar los nombres importados desde otro modulo
+- Esta compuesto de clases, funciones y variables
+
+[fn:verboso] Se necesita escribir mas, mucho mas complicado de leer si se es principiante pero mas facil al tener experiencia
+[fn:interprete] Programa que ejecuta el codigo linea por linea sin convertirlo a codigo fuente
